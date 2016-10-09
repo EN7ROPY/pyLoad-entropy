@@ -1,0 +1,53 @@
+{
+  "title": "pyLoad entropy",
+  "name": "pyload_entropy",
+  "fullname": "pyLoad entropy",
+  "version": "0.0.1",
+  "description": "This add-on can send a browser link with one click to pyLoad",
+  "main": "index.js",
+  "author": "EN7ROPY",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ],
+ "preferences": [{
+        "name": "pyLoadServer",
+        "title": "pyLoad server",
+        "description": "pyLoad server (without: http://; Default: localhost)",
+        "type": "string",
+        "value": "127.0.0.1"
+  },
+  {
+        "name": "pyLoadPort",
+        "title": "pyLoad webinterface port",
+        "description": "pyLoad webinterface port (Default: 8000)",
+        "type": "string",
+        "value": "8000"
+  },
+  {
+        "name": "pyLoadUser",
+        "title": "pyLoad user",
+        "type": "string",
+        "value": ""
+  },
+  {
+        "name": "pyLoadPassword",
+        "title": "pyLoad user password",
+        "type": "string",
+        "value": ""
+  },
+  {
+        "type": "boolint",
+        "name": "toqueue",
+        "on": "1",
+        "off": "0",
+        "value": 1,
+        "title": "Links to queue"
+  }
+]
+}
+
